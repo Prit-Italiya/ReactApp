@@ -28,8 +28,32 @@ a {
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #ebc340;
+  background: linear-gradient(45deg, white, black);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%; }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  background: linear-gradient(45deg, black, transparent);
+  /*&-items:hover {
+        background-color: #c4c4c4;
+    }*/ }
+  .navbar-items {
+    padding: 1rem;
+    display: block;
+    font-size: 16px;
+    font-weight: 500; }
+  .navbar-items:hover:before {
+    width: 100%;
+    background: red;
+    transition: width .35s ease; }
+  .navbar-items:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease; }
+  .navbar-items:active {
+    color: black; }

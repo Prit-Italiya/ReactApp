@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <nav>
-            <NavLink exact activeClassName="active" to="/">
+        <nav className="navbar">
+            <NavLink className="navbar-items" exact to="/">
                 Home
             </NavLink>
-            <NavLink exact activeClassName="active" to="/users">
+            <NavLink className="navbar-items" exact to="/users">
                 Users
             </NavLink>
-            <NavLink exact activeClassName="active" to="/contact">
+            <NavLink className="navbar-items" exact to="/contact">
                 Contact
             </NavLink>
         </nav>
